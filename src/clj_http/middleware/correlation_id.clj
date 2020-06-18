@@ -1,9 +1,8 @@
 (ns clj-http.middleware.correlation-id
-  (:require [taoensso.timbre :as timbre])
-  (:require [clj-http.client :as http])
-  (:require [ring.middleware.correlation-id :as ring-correlation-id])
-  (:import [java.util UUID])
-  )
+  (:require [taoensso.timbre :as timbre]
+[clj-http.client :as http]
+[ring.middleware.correlation-id :as ring-correlation-id])
+  (:import [java.util UUID]))
 
 
 (defn wrap-correlation-id
